@@ -1,8 +1,8 @@
-//define desiredCapabilities for the browse
+//define desiredCapabilities for the browser
 		DesiredCapabilities dc=DesiredCapabilities.chrome();
 		
 		dc.acceptInsecureCerts();
-		/* insted of above stmnt, we can use the below statemts also, insecure certs, SSl certificates) 
+		/* insted of above stmnt, we can use the below statemts also, insecure certs, SSl certificates etc) 
 		dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		dc.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true); */
 		
