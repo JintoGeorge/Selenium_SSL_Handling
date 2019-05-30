@@ -1,4 +1,4 @@
-//defined definedCapabilities for the browse
+//define desiredCapabilities for the browse
 		DesiredCapabilities dc=DesiredCapabilities.chrome();
 		
 		dc.acceptInsecureCerts();
