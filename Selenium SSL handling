@@ -1,0 +1,15 @@
+//defined definedCapabilities for the browse
+		DesiredCapabilities dc=DesiredCapabilities.chrome();
+		
+		dc.acceptInsecureCerts();
+		/* insted of above stmnt, we can use the below statemts also, insecure certs, SSl certificates) 
+		dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		dc.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true); */
+		
+		//ChromeOptions are used to customizing chrome options or customizing local chrome
+		ChromeOptions co=new ChromeOptions();
+		//merge that defined capabilities with browser option
+		co.merge(dc);
+		
+		//define/pass that chrome options to webdriver
+		WebDriver driver=new ChromeDriver(co);
